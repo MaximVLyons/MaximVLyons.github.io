@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condo Rentals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 1rem;
+            background-color: #f5f5f5;
+        }
+        .card p {
+            padding: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Condo Rentals</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#condos">Condos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main class="container">
+        <section id="home">
+            <h2>Discover Our Condos</h2>
+            <p>We offer three beautiful condos for rent: Tressa Terrace, Beach Glass, and Sunset Terrace. Each condo is designed for comfort and relaxation.</p>
+        </section>
+        <section id="condos">
+            <h2>Our Condos</h2>
+            <div class="card">
+                <img src="tressa-terrace.jpg" alt="Tressa Terrace">
+                <h3>Tressa Terrace</h3>
+                <p>A modern condo with stunning views and luxurious amenities.</p>
+            </div>
+            <div class="card">
+                <img src="beach-glass.jpg" alt="Beach Glass">
+                <h3>Beach Glass</h3>
+                <p>Enjoy the tranquility of the beach in this cozy retreat.</p>
+            </div>
+            <div class="card">
+                <img src="sunset-terrace.jpg" alt="Sunset Terrace">
+                <h3>Sunset Terrace</h3>
+                <p>Perfect for watching sunsets, this condo is a dream getaway.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Condo Rentals. All rights reserved.</p>
+    </footer>
+</body>
+</html>
