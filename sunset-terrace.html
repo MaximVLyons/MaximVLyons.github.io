@@ -11,19 +11,49 @@
         <h1>Sunset Terrace</h1>
     </header>
     <nav>
-        <a href="index.html#home">Home</a>
-        <a href="index.html#condos">Condos</a>
-        <a href="index.html#contact">Contact</a>
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#condos">Condos</a>
+            <a href="about.html">About</a>
+            <a href="location.html">Location</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="faq.html">FAQ</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
     </nav>
     <main class="container">
-        <section>
-            <img src="sunset-terrace.avif" alt="Sunset Terrace">
+        <section class="condo-details">
+            <div class="gallery">
+                <img src="sunset-terrace.avif" alt="Sunset Terrace" onclick="openLightbox(this)">
+                <img src="sunset-terrace-2.avif" alt="Sunset Terrace Living Room" onclick="openLightbox(this)">
+                <img src="sunset-terrace-3.avif" alt="Sunset Terrace Kitchen" onclick="openLightbox(this)">
+            </div>
             <h2>Sunset Terrace</h2>
-            <p>Perfect for watching sunsets, this condo is a dream getaway.</p>
+            <p>Sunset Terrace is a modern condo with stunning views and luxurious amenities. Enjoy the spacious living area, fully equipped kitchen, and private balcony with breathtaking views.</p>
+            <p>Located in the beautiful Outer Banks of North Carolina, Sunset Terrace offers the perfect setting for a relaxing vacation. Whether you're planning a family getaway, a romantic retreat, or a remote work experience, this condo provides all the comforts and conveniences you need.</p>
+            <p>Experience the beauty of the Outer Banks with its picturesque landscapes, rich history, and outdoor activities. Take a leisurely stroll along the beach, go fishing, kayaking, or visit historic lighthouses and quaint villages. The area is also ideal for remote work, with peaceful surroundings and reliable internet connectivity.</p>
+            <p>Book your stay at Sunset Terrace and enjoy a memorable and relaxing vacation in the Outer Banks.</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Condo Rentals. All rights reserved.</p>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <script>
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
