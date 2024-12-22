@@ -16,12 +16,17 @@ nav {
     background-color: #004d40; /* Darker teal for the navigation bar */
     padding: 0.5rem 0;
 }
-nav a {
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links a {
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
 }
-nav a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
 .container {
@@ -171,4 +176,14 @@ button[type="submit"]:hover {
     max-width: 90%;
     max-height: 90%;
     border-radius: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+    }
+    .nav-links a {
+        margin: 0.5rem;
+    }
 }
