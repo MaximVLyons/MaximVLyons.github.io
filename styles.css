@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #e0f7fa; /* Light blue background to reflect the beach theme */
 }
 header {
-    background-color: #333;
+    background-color: #00796b; /* Teal color for the header */
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -13,7 +13,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #444;
+    background-color: #004d40; /* Darker teal for the navigation bar */
     padding: 0.5rem 0;
 }
 nav a {
@@ -29,6 +29,29 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
+.condo-details {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.condo-details p {
+    margin-bottom: 1rem;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+}
 .card {
     display: block;
     background-color: #fff;
@@ -39,27 +62,32 @@ nav a:hover {
     text-decoration: none;
     color: inherit;
     transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 700px; /* Max width for the cards */
+    margin-left: auto;
+    margin-right: auto;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.card h3 {
+    margin: 0;
+    padding: 1rem;
+    background-color: #b2dfdb; /* Light teal background for card headers */
+}
+.card p {
+    padding: 1rem;
+    margin: 0; /* Remove default margin */
 }
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.card img {
-    width: 100%;
-    height: auto;
-}
-.card h3 {
-    margin: 0;
-    padding: 1rem;
-    background-color: #f5f5f5;
-}
-.card p {
-    padding: 1rem;
-}
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #00796b; /* Teal color for the footer */
     color: #fff;
     margin-top: 2rem;
 }
@@ -84,7 +112,7 @@ form {
     border-radius: 4px;
 }
 button[type="submit"] {
-    background-color: #333;
+    background-color: #00796b; /* Teal color for the submit button */
     color: #fff;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -92,7 +120,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 button[type="submit"]:hover {
-    background-color: #555;
+    background-color: #004d40; /* Darker teal on hover */
 }
 #why-book {
     background-color: #fff;
@@ -104,6 +132,7 @@ button[type="submit"]:hover {
 #why-book h2 {
     text-align: center;
     margin-bottom: 1rem;
+    color: #00796b; /* Teal color for the section header */
 }
 #why-book .benefits {
     display: flex;
@@ -122,4 +151,24 @@ button[type="submit"]:hover {
 }
 #why-book .benefit h3 {
     margin-bottom: 0.5rem;
+    color: #004d40; /* Darker teal for the benefit headers */
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
 }

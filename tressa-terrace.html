@@ -16,14 +16,37 @@
         <a href="index.html#contact">Contact</a>
     </nav>
     <main class="container">
-        <section>
-            <img src="tressa-terrace.avif" alt="Tressa Terrace">
+        <section class="condo-details">
+            <div class="gallery">
+                <img src="tressa-terrace.avif" alt="Tressa Terrace" onclick="openLightbox(this)">
+                <img src="tressa-terrace-2.avif" alt="Tressa Terrace Living Room" onclick="openLightbox(this)">
+                <img src="tressa-terrace-3.avif" alt="Tressa Terrace Kitchen" onclick="openLightbox(this)">
+            </div>
             <h2>Tressa Terrace</h2>
-            <p>A modern condo with stunning views and luxurious amenities.</p>
+            <p>Tressa Terrace is a modern condo with stunning views and luxurious amenities. Enjoy the spacious living area, fully equipped kitchen, and private balcony with breathtaking views.</p>
+            <p>Located in the beautiful Outer Banks of North Carolina, Tressa Terrace offers the perfect setting for a relaxing vacation. Whether you're planning a family getaway, a romantic retreat, or a remote work experience, this condo provides all the comforts and conveniences you need.</p>
+            <p>Experience the beauty of the Outer Banks with its picturesque landscapes, rich history, and outdoor activities. Take a leisurely stroll along the beach, go fishing, kayaking, or visit historic lighthouses and quaint villages. The area is also ideal for remote work, with peaceful surroundings and reliable internet connectivity.</p>
+            <p>Book your stay at Tressa Terrace and enjoy a memorable and relaxing vacation in the Outer Banks.</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Condo Rentals. All rights reserved.</p>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <script>
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
 </body>
 </html>

@@ -13,12 +13,22 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#condos">Condos</a>
+        <a href="about.html">About</a>
+        <a href="location.html">Location</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
         <a href="#contact">Contact</a>
     </nav>
     <main class="container">
         <section id="home">
             <h2>Discover Our Condos</h2>
-            <p>We offer three beautiful condos for rent: Tressa Terrace, Beach Glass, and Sunset Terrace. Each condo is designed for comfort and relaxation.</p>
+            <div class="condo-details">
+                <p>We offer three beautiful condos for rent in the stunning Outer Banks of North Carolina. Each condo is designed for comfort and relaxation, providing you with the perfect getaway experience.</p>
+                <p>Imagine waking up to the sound of waves crashing on the shore, enjoying your morning coffee on a private balcony with breathtaking ocean views, and spending your days exploring the pristine beaches and charming coastal towns. Whether you're planning a family vacation, a romantic retreat, or a remote work getaway, our condos offer the ideal setting.</p>
+                <p>The Outer Banks is known for its picturesque landscapes, rich history, and outdoor activities. You can take a leisurely stroll along the beach, go fishing, kayaking, or even take a scenic drive to visit historic lighthouses and quaint villages. The area is also perfect for remote work, with peaceful surroundings and reliable internet connectivity, allowing you to take your Zoom calls with a view of the ocean.</p>
+                <p>Book your stay with us and experience the beauty and tranquility of the Outer Banks. Our condos provide all the amenities you need for a memorable and relaxing vacation.</p>
+            </div>
         </section>
         <section id="condos">
             <h2>Our Condos</h2>
@@ -69,19 +79,19 @@
             <form>
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
                 </div>
                 <button type="submit">Send Message</button>
             </form>
